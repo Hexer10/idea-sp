@@ -9,5 +9,5 @@ import org.idea_sp.SourcePawnFileType
 class SourcePawnFile(viewProvider: FileViewProvider) : PsiFileBase(viewProvider, SourcePawnLanguage) {
     override fun getFileType(): FileType = SourcePawnFileType
 
-    override fun toString(): String = "SourcePawn File"
+    override fun toString(): String = "SourcePawn file"
 }
