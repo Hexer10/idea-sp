@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>org.idea_sp</id>
     <name>IDEA SourcePawn</name>
-    <vendor email="" url=""> </vendor>
+    <vendor email="" url=""></vendor>
 
     <description>SourcePawn Language support for Intellij IDEA</description>
 
@@ -10,14 +10,14 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- TODO: Replace fileTypeFactory with fileType -->
-        <fileTypeFactory implementation="org.idea_sp.SourcePawnFileTypeFactory"/>
+        <fileType name="SourcePawn File" implementationClass="org.idea_sp.SourcePawnFileType"
+                  fieldName="INSTANCE" language="SourcePawn" extensions="sp;inc"/>
+
         <lang.parserDefinition language="SourcePawn"
                                implementationClass="org.idea_sp.SourcePawnParserDefinition"/>
 
-        <!-- TODO: Replace syntaxHighlighterFactory with syntaxHighlighter -->
-        <lang.syntaxHighlighterFactory language="SourcePawn"
-                                implementationClass="org.idea_sp.SourcePawnSyntaxHighlighterFactory"/>
+        <lang.syntaxHighlighter language="SourcePawn"
+                                implementationClass="org.idea_sp.SourcePawnSyntaxHighlighter"/>
         <colorSettingsPage implementation="org.idea_sp.SourcePawnColorSettingsPage"/>
 
     </extensions>
