@@ -10,7 +10,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <fileType name="SourcePawn File" implementationClass="org.idea_sp.SourcePawnFileType"
+        <fileType name="SourcePawn file" implementationClass="org.idea_sp.SourcePawnFileType"
                   fieldName="INSTANCE" language="SourcePawn" extensions="sp;inc"/>
 
         <lang.parserDefinition language="SourcePawn"
